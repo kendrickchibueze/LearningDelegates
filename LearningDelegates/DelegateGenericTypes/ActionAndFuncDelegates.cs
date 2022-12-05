@@ -68,7 +68,15 @@ namespace LearningDelegates.DelegateGenericTypes
             //you want to point to a method that does have a return value(and don’t want to bother writing the custom
             //delegate yourself), you can use Func<>.
             //The generic Func<> delegate can point to methods that(like Action<>) take up to 16 parameters and a
-            //custom return value
+            //custom return value.
+            //It must have one return type. The return type is mandatory but the input parameter is not mandatory.
+            //Whenever your delegate returns some value, whether by taking any input parameter or not, you need to use the Func Generic delegate in C#.
+
+
+
+
+
+            //The predicate delegate takes a maximum of 1 input parameter of any type and returns a boolean value. We don't have to specify the return value as by default the return type is a boolean
 
 
 

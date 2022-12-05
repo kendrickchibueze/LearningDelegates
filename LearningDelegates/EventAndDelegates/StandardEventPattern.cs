@@ -66,7 +66,7 @@ namespace LearningDelegates.EventAndDelegates
 
             protected virtual void OnPriceChanged(PriceChangedEventArgs e)
             {
-                PriceChanged?.Invoke(this, e); //if priceChanged is null, invoke else do nothing
+                PriceChanged?.Invoke(this, e); //if priceChanged (Event handler delegate under the scene)is null, invoke else do nothing
             }
             public decimal Price
             {
